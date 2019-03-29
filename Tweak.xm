@@ -16,7 +16,7 @@ int applicationDidFinishLaunching;
 %end
 %hook SBDashboardHomeAffordanceView
 - (void)_createStaticHomeAffordance {
-		return %orig;
+		return;
 }
 %end
 
@@ -100,4 +100,13 @@ int applicationDidFinishLaunching;
 + (Class)class {
     return NSClassFromString(@"_UIStatusBarVisualProvider_Split58");
 }
+%end
+
+//FUgap, credit to smokin1337
+%hook CCUIHeaderPocketView
+  //Hide Header Blur
+  -(void)setBackgroundAlpha:(double)arg1{
+      arg1 = 0.0;
+      %orig;
+  }
 %end
