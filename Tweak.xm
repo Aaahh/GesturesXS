@@ -9,14 +9,19 @@ int applicationDidFinishLaunching;
 %end
 
 // Hide home bar
+
+%hook UIViewController
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return YES;
+}
+%end
+
+@interface MTLumaDodgePillView : UIView
+@end
+
 %hook MTLumaDodgePillView
 - (id)initWithFrame:(struct CGRect)arg1 {
 	return NULL;
-}
-%end
-%hook SBDashboardHomeAffordanceView
-- (void)_createStaticHomeAffordance {
-		return;
 }
 %end
 
