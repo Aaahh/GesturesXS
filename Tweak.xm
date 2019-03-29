@@ -98,7 +98,7 @@ int applicationDidFinishLaunching;
 }
 %end
 
-hook _UIStatusBarVisualProvider_iOS
+%hook _UIStatusBarVisualProvider_iOS
 + (Class)class {
     return NSClassFromString(@"_UIStatusBarVisualProvider_Split58");
 }
