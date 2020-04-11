@@ -3,10 +3,8 @@
 Enable iPhone X home gestures on other iOS 12 devices.
 
 ## Features
-* iPhone X home and multitasking gestures.
+* iPhone X home, buttons, and multitasking gestures.
 * Home Bar hidden.
-* Original button gestures for screenshot and Siri.
-
 
 ## Building
 [Theos](https://github.com/theos/theos) required.
@@ -21,3 +19,4 @@ GesturesXS is forked from tweaks such as [HomeGesture Lite by MidnightChips](htt
 
 ## Credits
 duraidabdul - Neptune
+anynon- GesturesXS
