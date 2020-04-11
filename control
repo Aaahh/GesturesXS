@@ -1,9 +1,9 @@
-Package: com.ryannair05.gesturesxs
-Name: GesturesXS
+Package: com.aaahh.gesturesxs
+Name: GesturesXS11
 Depends: mobilesubstrate
-Version: 2.3.0
+Version: 2.3.1
 Architecture: iphoneos-arm
-Description: iPhone X gestures, nothing else!
+Description: iPhone X gestures
 Maintainer: Ryan Nair
 Author: Ryan Nair
 Section: Tweaks
